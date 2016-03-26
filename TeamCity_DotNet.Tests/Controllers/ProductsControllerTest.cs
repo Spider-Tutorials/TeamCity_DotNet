@@ -17,7 +17,7 @@ namespace TeamCity_DotNet.Tests.Controllers
             IQueryable < Product > result = controller.GetProducts();
 
             Assert.IsNotNull(result);
-            //Assert.Equals(2, result.Count());
+            Assert.Equals(2, result.Count());
         }
     }
 }
